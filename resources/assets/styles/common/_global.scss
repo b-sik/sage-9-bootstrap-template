@@ -1,0 +1,72 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+caption {
+  font-size: 0.75rem;
+}
+
+h3 {
+  color: $info !important;
+  text-transform: lowercase !important;
+}
+
+h5,
+small {
+  color: $body-bg;
+
+  > em,
+  > time {
+    color: $body-color;
+  }
+}
+
+.h1.brand {
+  font-family: "Anonymous Pro", monospace !important;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.nav-item .nav-link {
+  text-transform: uppercase !important;
+  color: $dark !important;
+
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+.card:not(.about) {
+  background-color: $gray-100 !important;
+
+  .list-group-item {
+    background-color: $gray-100 !important;
+  }
+}
+
+.hero-height {
+  @include media-breakpoint-down(lg) {
+    height: 30vh;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 60vh;
+  }
+}
+
+.post-img {
+  &:hover {
+    @include media-breakpoint-up(lg) {
+      transform: scale(1.1);
+      transition: all 0.2s;
+    }
+  }
+}

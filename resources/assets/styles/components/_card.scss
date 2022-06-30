@@ -1,0 +1,24 @@
+.carousel .card-deck {
+  .card {
+    @include media-breakpoint-up(xl) {
+      max-width: 320px !important;
+    }
+
+    @include media-breakpoint-down(xl) {
+      max-width: 260px !important;
+    }
+  }
+
+  &.carousel-item-right,
+  &.carousel-item-left,
+  &.carousel-item-prev,
+  &.carousel-item-next,
+  &.active {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &.active {
+    @extend .justify-self-center !optional;
+  }
+}

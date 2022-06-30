@@ -1,0 +1,27 @@
+section.container:not(#news) {
+  @extend .py-5;
+}
+
+h3 {
+  @extend .py-2;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  max-width: 100%;
+}
+
+.wrapper-border {
+  @extend .border-top, .border-bottom, .my-3, .py-3;
+}
+
+.shows-wrapper {
+  .wrapper-border-show {
+    @extend .border-bottom, .mb-2, .pb-2;
+  }
+
+  > div:first-of-type {
+    @extend .border-top, .mt-2, .pt-2;
+  }
+}
